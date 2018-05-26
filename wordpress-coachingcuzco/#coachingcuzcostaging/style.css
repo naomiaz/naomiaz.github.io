@@ -1,0 +1,92 @@
+/*
+Theme Name: Coaching Cuzco Staging
+Author: Naomi Zuiverloon
+Description: This is a staging page for www.coachingcuzco.com.
+Version: 1.0
+Text Domain: coachingcuzco-staging
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-rendering: optimizeLegibility;
+  color: white;
+  text-align: center;
+  background-image: linear-gradient(rgba(83, 176, 185, 0.7), rgba(27, 84, 123,0.8)), url(ausangate.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  justify-content: center;
+}
+
+:root {
+  var(--lb-1): rgb(0,152,162);
+
+}
+/* -------------------------------------- */
+/* ----- GENERAL STYLES ----- */
+/* -------------------------------------- */
+
+/* HEADINGS */
+h1 {
+  /* font-size: 260%; */
+  line-height: normal;
+}
+
+/* LINKS */
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+  transition: font-weight 0.3s;
+}
+
+a:hover,
+a:active {
+  font-weight: 700;
+}
+
+/* SVG */
+.svg {
+  margin-right: 0.4em;
+}
+
+/* -------------------------------------- */
+/* ----- HEADER ----- */
+/* -------------------------------------- */
+
+header .title {
+  font-size: 200%;
+  font-weight: 700;
+  font-family: 'Courier New', monospace;
+}
+
+/* -------------------------------------- */
+/* ----- MAIN ----- */
+/* -------------------------------------- */
+
+main img {
+  width: 20rem;
+  margin: 75px 0;
+}
+
+main .contact p {
+  font-size: 120%;
+  margin-bottom: 12px;
+}

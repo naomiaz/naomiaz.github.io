@@ -1,0 +1,32 @@
+
+/* Big tablet to 1200 px (width smaller than the 1140 px .row */
+@media only screen and (max-width: 1200px) {
+  /* Rows didn't have a padding before, they were just centered. Now they need a padding to avoid them touching the device edges */
+  .row { padding: 0 2%; width: 100%; }
+}
+
+
+/* Small tablet to big tablet: from 768 to 1023 px */
+@media only screen and (max-width: 1023px) {
+
+}
+
+
+/* Small phones to small tablets: from 481 to 767 px */
+@media only screen and (max-width: 767px) {
+  [class*="col-"] {
+        width: 100%;
+    }
+
+  .section-about img {
+    width: 50%;
+  }
+
+}
+
+
+/* Small phones: from 0 t/m 480 px */
+@media only screen and (max-width: 480px) {
+  section { padding: 25px 0; }
+  .contact-form { width: 100%; }
+}
