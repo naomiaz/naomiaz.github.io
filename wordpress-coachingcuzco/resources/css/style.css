@@ -9,6 +9,7 @@
 :root {
   --light-blue: rgb(83, 176, 185);
   --dark-gray: #333;
+  --light-gray: #f1f1f1;
   --yellow: rgb(249, 178, 51); /* #f9b233 */
   --dark-yellow: rgb(242, 158, 7); /* #f29e07 */
   --dark-blue: rgb(27, 84, 123);
@@ -25,7 +26,7 @@ html,
 body {
   font-family: 'Raleway', 'Arial', sans-serif;
   font-weight: 300;
-  font-size: 17px;
+  font-size: 18px;
   text-rendering: optimizeLegibility;
   color: var(--dark-gray);
 }
@@ -306,7 +307,7 @@ ul.list-process li::before {
 
 header {
   background-image: linear-gradient(rgba(83, 176, 185, 0.6), rgba(27, 84, 123, 1)), url(img/ausangate.jpg);
-  background-image: linear-gradient(rgba(83, 176, 185, 0.8), rgba(27, 84, 123, 0.1)), url(img/ausangate.jpg);
+  /* background-image: linear-gradient(rgba(83, 176, 185, 0.8), rgba(27, 84, 123, 0.1)), url(img/ausangate.jpg); */
   /* background-image: linear-gradient(rgba(9,32,63, 0.45), rgba(83, 120, 149,1)), url(img/ausangate.jpg); */
   background-size: cover;
   background-attachment: fixed;
@@ -350,7 +351,7 @@ nav ul li {
 }
 
 .logo {
-  width: 450px;
+  width: 480px;
   height: auto;
 }
 
@@ -377,13 +378,13 @@ nav ul li {
 /* -------------------------------------- */
 
 .section-about {
-  background-color: #f1f1f1;
+  background-color: var(--light-gray);
 }
 
 .section-about img {
   display: block;
   border-radius: 50%;
-  width: 75%;
+  width: 60%;
   margin: 0 auto 20px auto;
 }
 
@@ -455,6 +456,10 @@ li .logo-container {
 /* MAIN - CONTACT */
 /* -------------------------------------- */
 
+.section-contact {
+  background-color: var(--light-gray);
+}
+
 .section-contact img {
   display: block;
   border-radius: 50%;
@@ -469,15 +474,20 @@ li .logo-container {
 }
 
 /* ----- FORM ----- */
+
+form {
+  margin-top: 20px;
+}
+
 .form-row {
   display: block;
   margin-bottom: 20px;
 }
 
-label {
+/* label {
   display: block;
   margin-bottom: 10px;
-}
+} */
 
 input[type=text],
 input[type=email],
@@ -492,7 +502,7 @@ textarea {
 }
 
 textarea {
-  height: 100px;
+  height: 150px;
 }
 
 input[type=checkbox] {
