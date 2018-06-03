@@ -229,7 +229,7 @@ input[type=submit] {
   display: block;
   border: none;
   border-radius: 8px;
-  padding: 10px;
+  padding: 10px 20px;
   background-color: var(--yellow);
   transition: background-color 0.25s;
   font-family: 'Poppins', 'Arial', sans-serif;
@@ -321,12 +321,12 @@ nav ul {
   padding-left: 0;
 }
 
-nav ul.nav-menu { /* menu */
+nav .nav-menu { /* menu */
   float: left;
   margin-left: 50px;
 }
 
-nav ul.nav-contact { /* contact */
+nav .nav-contact { /* contact */
   float: right;
   margin-right: 50px;
   background-color: var(--yellow);
@@ -334,7 +334,7 @@ nav ul.nav-contact { /* contact */
   font-weight: 400;
 }
 
-nav ul.nav-contact i {
+nav .nav-contact i {
   color: #fff;
 }
 
@@ -354,6 +354,49 @@ nav ul li {
   width: 480px;
   height: auto;
 }
+
+
+/* Mobile navigation */
+.mobile-nav-icon {
+  float: right;
+  margin: 20px 25px 20px 0;
+  cursor: pointer; /* without href it doesn't show a pointer */
+  display: none;
+}
+
+.mobile-nav-icon:hover {
+  border-bottom: none;
+}
+
+.mobile-nav-icon i {
+  font-size: 180%;
+  color: #fff;
+}
+
+/* Sticky navigation */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  -webkit-box-shadow: 2px 2px 5px #efefef;
+          box-shadow: 2px 2px 5px #efefef;
+  z-index: 9999; /* max index so that it's always on top of the elements */
+}
+
+.sticky .nav-menu {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.sticky .nav-contact { display: none; }
+
+.sticky .nav-menu li a:link,
+.sticky .nav-menu li a:visited {
+  padding: 1px 0;
+  color: var(--dark-gray);
+}
+
 
 /* -------------------------------------- */
 /* MAIN - INTRO */
@@ -474,10 +517,6 @@ li .logo-container {
 }
 
 /* ----- FORM ----- */
-
-form {
-  margin-top: 20px;
-}
 
 .form-row {
   display: block;

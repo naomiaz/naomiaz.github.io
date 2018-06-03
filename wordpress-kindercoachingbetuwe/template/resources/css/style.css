@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Quicksand:400,500,700');
+:root {
+    --teal-light: rgb(79, 129, 141);
+    --teal-dark: rgb(44, 73, 82);
+    --red-light: rgb(162, 112, 123);
+    --red-lighter: rgb(184, 154, 147);
+    --red-dark: rgb(207, 37, 42);
+    --red-darker: rgb(153, 22, 18);
+}
+
+/* ---------------------------------- */
+/* GENERAL STYLES */
+/* ---------------------------------- */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(86, 86, 86);
+}
+
+/* ----- HEADINGS ----- */
+
+h1, h2, h3, h4, h5, h6, nav, .breadcrumb {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+h1, h3, h4, h5, h6 {
+    color: var(--teal-dark);
+}
+
+h1 {
+    margin-bottom: 0.6em;
+}
+
+h2 {
+    color: var(--red-dark);
+}
+
+a {
+    font-weight: 600;
+    color: inherit;
+}
+
+/* ----- LINKS ----- */
+
+a:hover {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--red-dark);
+    transition: color 0.2s, font-weight 0.2s;
+}
+
+a:hover h3,
+a:hover h4 {
+    color: var(--red-dark);
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+/* ----- BUTTONS ----- */
+
+.btn-red {
+    background-color: var(--red-dark);
+    color: white;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.btn-red:hover {
+    background-color: var(--red-darker);
+    color: white;
+    font-weight: normal;
+}
+
+/* ----- LISTS ----- */
+
+ul {
+    list-style-type: circle;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+p+ul {
+    margin-top: -1em;
+}
+
+ul.no-list-type {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* ----- TIME ----- */
+
+time {
+    display: block;
+}
+
+h1+time {
+    margin-top: -1em;
+    margin-bottom: 1.5em;
+}
+
+/* ----- BLOCKQUOTES ----- */
+
+blockquote {
+    margin: 1.5em 0;
+}
+
+blockquote p {
+    color: var(--teal-dark);
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+blockquote p:before {
+  content:"\201C";
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.1em;
+  vertical-align: -0.4em;
+}
+
+/* ---------------------------------- */
+/* PAGE LAY-OUT */
+/* ---------------------------------- */
+
+/* ----- NAV ----- */
+
+nav.navbar {
+    background-color: white;
+    box-shadow: 0 2px 25px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav a, #navbardrop, .dropdown-item {
+    color: rgb(86, 86, 86);
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+nav a:hover, #navbardrop:hover, .dropdown-item:hover {
+    color: var(--red-dark);
+    text-decoration: none;
+}
+
+.navbar-btn {
+    background-color: var(--red-dark);
+    color: white;
+}
+
+.navbar-btn:hover {
+    background-color: var(--red-darker);
+    color: white;
+    font-weight: normal;
+}
+
+nav li.active>a, nav li.a:active {
+    color: var(--red-dark);
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: var(--red-dark);
+    text-decoration: none;
+    background-color: white;
+}
+
+/* ----- MEDIA QUERIES LOGO ----- */
+
+@media only screen and (max-width: 440px) {
+  .logo {
+    width: 210px;
+  }
+}
+
+/* ----- HEADER ----- */
+
+header.banner {
+    height: 55vh;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header.banner-home {
+    height: 65vh;
+}
+
+/* ----- BREADCRUMB ----- */
+
+.breadcrumb {
+    padding: 0;
+    margin-bottom: 0;
+    background: none;
+    border-radius: 0;
+}
+
+.breadcrumb-item a {
+    color: black;
+    font-weight: 600;
+}
+
+/* ----- FOOTER ----- */
+
+.text-small {
+    font-size: 0.8em;
+}
+
+.bg-teal-dark {
+    background-color: var(--teal-dark);
+    color: white;
+}
+
+.bg-teal-dark h4 {
+    color: white;
+}
+
+.bg-teal-light {
+    background-color: var(--teal-light);
+    color: white;
+}
+
+.bg-red {
+    background-color: var(--red-dark);
+    color: white;
+}
+
+/* ---------------------------------- */
+/* INDIVIDUAL PAGE LAY-OUT */
+/* ---------------------------------- */
+
+/* ----- HOME ----- */
+/* ----- USP-WRAPPER ----- */
+
+.section-usp {
+  text-align: center;
+}
+
+.section-usp p:first-child {
+  font-size: 120%;
+}
+
+.section-usp img, .section-usp svg {
+    width: 2.5em;
+}
+
+/* ----- HOME ----- */
+/* ----- ABOUT ----- */
+
+.section-about {
+    display: flex;
+    align-items: center;
+}
+
+.section-about .col-md-6:first-child, .section-testimonial {
+  text-align: center;
+}
+
+.section-about h2, .section-about h3 {
+    color: white;
+}
+
+.section-about img {
+    width: 16em;
+    height: auto;
+}
+
+.section-testimonial h2 {
+    color: var(--teal-light);
+}
+
+/* ----- BLOG ----- */
+/* ----- ARTICLES ----- */
+
+.blog-articles {
+    margin-bottom: 1em;
+}
+
+.blog-articles-recent {
+  list-style: none;
+  padding-left: 0;
+}
+
+.blog-article-recent-item {
+    display: flex;
+    align-items: center;
+}
+
+.blog-article-recent-item:hover {
+    background-color: #f8f9fa;
+}
+
+.blog-categories li {
+    padding: 0.2em 0 0.2em 0;
+}
+
+/* ----- BLOG ----- */
+/* ----- PAGINATION ----- */
+
+.pagination a.page-link {
+    border: none;
+    color: inherit;
+}
+
+.page-item.active .page-link {
+    background-color: var(--teal-light);
+}
+
+/* ----- AGENDA ----- */
+.agenda-items article {
+    margin-bottom: 1em;
+}
+
+.agenda-items article div {
+    background-color: var(--red-darker);
+    color: white;
+}
+
+.agenda-items article div h5 {
+    color: white;
+}
+
+/* ----- CONTACT ----- */
+.aside-contact div:first-of-type {
+    text-align: center;
+}
+
+.aside-contact img {
+    width: 16em;
+    height: auto;
+}

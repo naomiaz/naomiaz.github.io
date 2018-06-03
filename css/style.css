@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway+Dots|Raleway:400,400i,600');
+:root {
+    --lightgray: #f4f4f5;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--lightgray);
+}
+
+nav {
+    padding-top: 1em; /* em vs rem? */
+    text-align: center;
+    background-color: white;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+nav li {
+    margin: 0 3em;
+    font-size: 1.2em;
+}
+
+nav a {
+    color: black;
+}
