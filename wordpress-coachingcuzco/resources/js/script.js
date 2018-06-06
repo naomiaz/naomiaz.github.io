@@ -104,7 +104,7 @@ $(document).ready(function() {
   var nav = $('.js--nav-menu');
   var icon = $('.js--nav-icon i');
 
-  if ($(window).width() > 767) {
+  if ($(window).width() > 846) {
     nav.css("display", "block");
     icon.addClass('fa-times');
     icon.removeClass('fa-bars');

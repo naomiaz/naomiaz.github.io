@@ -393,8 +393,8 @@ nav ul li {
   left: 0;
   width: 100%;
   background-color: rgb(255, 255, 255);
-  -webkit-box-shadow: 2px 2px 5px #efefef;
-          box-shadow: 2px 2px 5px #efefef;
+  -webkit-box-shadow: 0 2px 20px #d8d8d8;
+          box-shadow: 0 2px 20px #d8d8d8;
   z-index: 9999; /* max index so that it's always on top of the elements */
 }
 
@@ -515,6 +515,16 @@ li .logo-container {
 
 .section-contact {
   background-color: var(--light-gray);
+}
+
+.section-contact .section-contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
 }
 
 .section-contact img {
