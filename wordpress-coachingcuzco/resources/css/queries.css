@@ -110,8 +110,8 @@
   .section-contact-info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
-            -ms-flex-flow: column-reverse;
-                flex-flow: column-reverse;
+        -ms-flex-flow: column-reverse nowrap;
+            flex-flow: column-reverse nowrap;
   }
   .form-row { margin-bottom: 35px; }
   .btn, input[type=submit] { margin: 30px auto; }
