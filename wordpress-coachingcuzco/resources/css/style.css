@@ -312,8 +312,8 @@ ul.list-process li::before {
 /* -------------------------------------- */
 
 header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(83, 176, 185, 0.6)), to(rgba(27, 84, 123, 0.8))), url(img/ausangate.jpg);
-  background-image: linear-gradient(rgba(83, 176, 185, 0.6), rgba(27, 84, 123, 0.8)), url(img/ausangate.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(83, 176, 185, 0.6)), to(rgba(27, 84, 123, 0.8))), url(img/ausangate.jpg);
+  background-image: linear-gradient(rgba(83, 176, 185, 0.6) 20%, rgba(27, 84, 123, 0.8)), url(img/ausangate.jpg);
   /* background-image: linear-gradient(rgba(83, 176, 185, 0.8), rgba(27, 84, 123, 0.1)), url(img/ausangate.jpg); */
   /* background-image: linear-gradient(rgba(9,32,63, 0.45), rgba(83, 120, 149,1)), url(img/ausangate.jpg); */
   background-size: cover;
