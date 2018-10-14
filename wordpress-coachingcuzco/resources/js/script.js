@@ -1,4 +1,5 @@
-$(document).ready(function() {
+jQuery(function ($) {
+  //$(document).ready(function() {
 
   // Scroll on buttons
   $('.js--scroll-to-contact').click(function () {
@@ -71,7 +72,6 @@ $(document).ready(function() {
   $('.js--nav-icon, .js--nav-menu a').click(function(element) {
     var nav = $('.js--nav-menu');
     var icon = $('.js--nav-icon>i');
-    var logo = $('.jumbotron');
 
     //Gets the class name of the element that triggered the event
   	//var clicked = element.target.className;
@@ -85,35 +85,22 @@ $(document).ready(function() {
       nav.slideToggle(200)
     }
 
-    // Remove hamburger icon and add cross
-    if (icon.hasClass('fa-bars')) {
-      icon.addClass('fa-times');
-      icon.removeClass('fa-bars');
-      // logo.css("display","none");
+    $(window).resize(function() {
+      var nav = $('.js--nav-menu');
+      var icon = $('.js--nav-icon i');
 
-    } else {
-      // Remove cross icon and add hamburger
-      icon.addClass('fa-bars');
-      icon.removeClass('fa-times');
-      // logo.css("display","initial");
-
-    }
+      if ($(window).width() > 846) {
+        nav.css("display", "block");
+        icon.addClass('fa-times');
+        icon.removeClass('fa-bars');
+      } else {
+        nav.css("display", "none");
+        icon.addClass('fa-bars');
+        icon.removeClass('fa-times');
+      }
+  	});
   });
 
-  $(window).resize(function() {
-  var nav = $('.js--nav-menu');
-  var icon = $('.js--nav-icon i');
 
-  if ($(window).width() > 846) {
-    nav.css("display", "block");
-    icon.addClass('fa-times');
-    icon.removeClass('fa-bars');
-  } else {
-    nav.css("display", "none");
-    icon.addClass('fa-bars');
-    icon.removeClass('fa-times');
-  }
-
-	});
 
 });
